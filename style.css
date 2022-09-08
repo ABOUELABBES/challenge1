@@ -1,0 +1,158 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'outfit', sans-serif ;
+    display: flex;
+    flex-direction: column;
+     justify-content: center; /* selon les axes des x */
+    align-items: center; /* selon les axes des y */
+    height: 100vh; /* 100% of viewport$*/
+
+}
+section{
+    background-color: hsl(216, 50%, 16%);
+    width: 330px;
+    height: 540px;
+    border-radius: 8px;
+    box-shadow: 2px 10px 50px hsl(217, 50%, 7%);/* selon les axes des x  ; selon les axes des y ; flou; couleur */
+
+}
+.NFT{
+    display: flex;
+    justify-content: center; /* flex se fait sur le contenaire si je veux centrer la #section je vise le body */
+}
+
+.nft-img{
+    width: 290px;
+    border-radius: 8px;
+    margin-top:20px ;
+    
+
+}
+.text-container{
+    margin-left: 20px;
+}
+.nft-name{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: all 0.2s;
+}
+
+.NFT-description{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+
+.feature-box{
+    display: flex; /*pr defaut flex : row */
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-top: 20px;
+
+
+}
+.nft-price{
+    display: flex;
+    gap: 8px;
+    
+}
+
+.nft-price-num{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+
+}
+
+.nft-time{
+display: flex;
+gap: 8px;
+
+
+}
+
+.nft-time-text{
+    color:hsl(215, 51%, 70%);
+
+}
+
+.line{
+    width:290px;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+    margin-top: 20px;
+}
+
+.nft-owner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+#nft-owner-icon{
+    width: 40px;
+    margin-right: 20px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+
+ }
+
+ .nft-owner-text{
+     color: hsl(215, 51%, 70%);
+
+ }
+ span{
+     color: hsl(0, 0%, 100%);
+
+ }
+
+.nft-name:hover{
+    color: hsl(178, 100%, 50%);
+    transform: scaleX();
+}
+span:hover{
+    color:hsl(178, 100%, 50%);
+    transition: all 0.2s;
+}
+
+.NFT{
+    position: relative;
+
+}
+.icon-view{
+    position: absolute;
+    top: 140px;
+    right: 140px;
+    z-index: -1;
+    
+}
+.nft-img:hover ~ .icon-view{
+    z-index:10;
+
+}
+.nft-img:hover{
+    filter: blur(20px) grayscale(20%);
+}
+
+.attribution { font-size: 14px;
+     text-align: center;
+     color: hsl(215, 51%, 70%);
+     
+    }
+
+.attribution a { color: hsl(178, 100%, 50%); 
+    text-decoration: none; 
+}
+
+@media screen and (max-width:675px) {
+    body{
+        width: 100%;
+        margin: 50px 5px;
+    
+    }
+    
+}
